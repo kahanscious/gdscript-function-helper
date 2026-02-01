@@ -17,6 +17,8 @@ when you hit tab after writing a function, it:
 - keeps your parameters and types intact
 - works with partial or complete function declarations
 
+![autocomplete](https://github.com/user-attachments/assets/1f74bf3a-e9ad-43ea-a543-18e36cfc1e1c)
+
 ### default return values
 
 here's what you get based on the return type:
@@ -87,6 +89,8 @@ func move_stuff(pos: Vector2, speed: float) -> void:
 
 right-click on a function call that doesn't exist yet and select "Generate Method" from the context menu. it creates a stub method with the right parameters.
 
+![generatemethod](https://github.com/user-attachments/assets/d279433c-8e1e-41bb-9efc-0896992d53c3)
+
 ```gdscript
 # right-click on this
 calculate_damage(player, 50, true)
@@ -99,6 +103,7 @@ func calculate_damage(arg1: Variant, arg2: int, arg3: bool) -> void:
 ### type inference
 
 the plugin tries to figure out parameter types from what you pass in:
+![generate-method](https://github.com/user-attachments/assets/2513819a-92ee-4cec-97e3-9fcd0e5a3ce8)
 
 - `true` / `false` → `bool`
 - `5` → `int`
